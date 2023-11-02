@@ -15,9 +15,11 @@
     <ClInclude Include="src\Anle\Application.h" />
     <ClInclude Include="src\Anle\Core.h" />
     <ClInclude Include="src\Anle\EntryPoint.h" />
+    <ClInclude Include="src\Anle\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Anle\Application.cpp" />
+    <ClCompile Include="src\Anle\Log.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -66,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AL_PLATFORM_WINDOWS;AL_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Anle\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Anle\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
